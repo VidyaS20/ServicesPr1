@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>Component 1</h2>
+      <button class="btn btn-success" (click)="onGetUsers()">GetUsers</button>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <th scope="row">1</th>
+            <td>{{user.name}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.city}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

@@ -1,0 +1,13 @@
+<div class="container mt-2">
+  <div class="card">
+    <div class="card-header">
+      Component 5
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">User Name: {{username}}</h5>
+      <p class="card-text">Cross Component Communication Via Subject n Behaviour Subject.</p>
+      <input type="text" placeholder="Username.." #uname> &nbsp;
+      <button class="btn btn-primary btn-sm" (click)="onUpdate(uname)">Update Name</button>
+    </div>
+  </div>
+</div>

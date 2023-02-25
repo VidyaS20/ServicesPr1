@@ -1,0 +1,22 @@
+<div class="containers">
+  <p>channels Component</p>
+  <button class="btn btn-success" (click)="onChannel()">My Channels</button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Channel Name</th>
+        <th scope="col">Language</th>
+        <th scope="col">Subscribed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let channel of channelData">
+        <th scope="row">1</th>
+        <td>{{channel.name}}</td>
+        <td>{{channel.language}}</td>
+        <td>{{channel.subscribed}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
